@@ -7,38 +7,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
     <title>Word Guess Game</title>
-</head>
-<header>
     Star wars Hang man game!
-
-</header>
+</head>
 
 <body>
-    <div class ="container">
+    <div class="container">
         <header>
             <h1>
                 Star Wars Hangman
             </h1>
-            
-            
-          </header>
-            <div class=" underscores">_ _ _ _</div>
-            <div class = "rightguess"></div>
-     </div>
-    <script type="text/javascript">
-        var game= ["Sith", "Jedi", "Deathstar", "Vader"]
-        var choice
 
 
+        </header>
+        <div id="underscores">_ _ _ _</div>
+        <div id="rightguess"></div>
+        <div id="wrongGuess"></div>
+        <div id= "debug"></div>
+    </div>
+ 
 
 
+<script src="assets/javascript/game.js?v=2.0" type="text/javascript"></script>
 
+<script type="text/javascript">
 
-    </script>
-
-
-
+$(document).ready(function() {
+  game.chooseWord();
+});</script>
 </body>
 
 </html>
