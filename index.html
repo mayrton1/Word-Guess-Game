@@ -24,9 +24,9 @@
 
 
         </header>
-        <div id="underscores"> _ _ _ _ _ </div>
-        <h3>Right Guesses: <span id="rightguess">0</span></h3>
-        <h3>Wrong Guesses: <span id="wrongguess">10</span></h3>
+        <div id="underscores">_ _ _ _</div>
+        <h3>Right Guesses: <span id="rightguess"></span></h3>
+        <h3>Wrong Guesses: <span id="wrongguess"></span></h3>
         <div id="debug"></div>
     </div>
 
@@ -36,12 +36,22 @@
 
 
     <script src="assets/javascript/game.js?v=2.0" type="text/javascript"></script>
-
     <script type="text/javascript">
-
         $(document).ready(function () {
             game.chooseWord();
-        });</script>
+        });
+
+        $(document).keyup(function (event) {
+            var keypress = event.key.toLowerCase();
+            // console.log(keypress);
+
+            game.check_letter(keypress);
+        });
+
+
+    </script>
+
+
 </body>
 
 </html>
