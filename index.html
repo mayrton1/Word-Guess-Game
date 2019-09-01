@@ -7,15 +7,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <title>Word Guess Game</title>
-    Star wars Hang man game!
 </head>
 
-<body>
+<body>Star wars Hang man game!
+
+
+
     <div class="container">
         <header>
             <h1>
@@ -24,21 +24,24 @@
 
 
         </header>
-        <div id="underscores">_ _ _ _</div>
-        <div id="rightguess"></div>
-        <div id="wrongGuess"></div>
-        <div id= "debug"></div>
+        <div id="underscores"> _ _ _ _ _ </div>
+        <h3>Right Guesses: <span id="rightguess">0</span></h3>
+        <h3>Wrong Guesses: <span id="wrongguess">10</span></h3>
+        <div id="debug"></div>
     </div>
- 
+
+    <!-- <audio id="vader">
+            <source src="./assets/audio/vader.mp3" type="audio/mp3">
+        </audio> -->
 
 
-<script src="assets/javascript/game.js?v=2.0" type="text/javascript"></script>
+    <script src="assets/javascript/game.js?v=2.0" type="text/javascript"></script>
 
-<script type="text/javascript">
+    <script type="text/javascript">
 
-$(document).ready(function() {
-  game.chooseWord();
-});</script>
+        $(document).ready(function () {
+            game.chooseWord();
+        });</script>
 </body>
 
 </html>
