@@ -5,7 +5,8 @@ var game = {
     RIGHTGUESS: $("#rightguess"),
     WRONGGUESS: $("#wrongguess"),
     DEBUG: $("#debug"),
-
+    YOUWIN: $("#youwin"),
+    YOULOSE: $("#youlose"),
     // game properties//
     defaultWords: ["sith", "jedi", "deathstar", "vader"],
     underscores_string: "",
@@ -36,8 +37,12 @@ var game = {
         // Debug
         this.debugThis(this.currentword_string, false);
         this.debugThis(this.currentword_arr, false);
-        this.debugThis(this.underscores_string, false);
         this.debugThis(this.underscores_arr, false);
+        this.debugThis(this.underscores_string, false);
+        this.debugThis(this.youwin_arr, false);
+        this.debugThis(this.youwin_string, false);
+        this.debugThis(this.youlose_arr, false);
+        this.debugThis(this.youlose_string, false);
 
         this.RIGHTGUESS.html(this.rightguess);
         this.WRONGGUESS.html(this.wrongguess);
@@ -67,6 +72,16 @@ var game = {
             this.wrongguess--;
         }
 
+        for (i = 0; i < 10; i++) {
+            if (answer === guess) {
+                alert("You guessed correctly");
+                break;
+            } else {
+                alert("Sorry Try Again");
+            }
+            console.log(i + 1);
+        }
+
         // Convert Array to String
         this.underscores_string = this.underscores_arr.join(" ");
 
@@ -85,7 +100,7 @@ var game = {
         this.debugThis(this.underscores_arr, false);
 
         // Determine win or loss based on this.rightguess and this.wrongguess
-
+        this.YOUWIN()
 
         // WIN 
         // $("#vader").play();
