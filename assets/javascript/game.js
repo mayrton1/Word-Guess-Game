@@ -72,15 +72,6 @@ var game = {
             this.wrongguess--;
         }
 
-        for (i = 0; i < 10; i++) {
-            if (answer === guess) {
-                alert("You guessed correctly");
-                break;
-            } else {
-                alert("Sorry Try Again");
-            }
-            console.log(i + 1);
-        }
 
         // Convert Array to String
         this.underscores_string = this.underscores_arr.join(" ");
