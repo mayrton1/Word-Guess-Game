@@ -13,7 +13,7 @@
     <style type="text/css">
         .jumbotron {
             margin-top: 20px;
-            background-image: url("\Users\ayrto\OneDrive\Desktop\Word-Guess-Game\assets\images\starwars.png");
+            background-image: url("/assets/images/stars.jpg");
             background-size: cover;
             color: white;
 
@@ -31,7 +31,7 @@
         }
 
         .body {
-            background: url("\Users\ayrto\OneDrive\Desktop\Word-Guess-Game\assets\images\stars.jpg");
+            background-image: url("assets/images/stars.jpg");
         }
     </style>
 
@@ -44,7 +44,15 @@
             <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
         </div>
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                </div>
 
+            </div>
+        </div>
+    </div>
+    
 
     <div class="container">
         <header>
@@ -65,23 +73,23 @@
 
     <script src="assets/javascript/game.js?v=2.0" type="text/javascript"></script>
     <script type="text/javascript">
-        $(document).ready(function () {
-            game.chooseWord();
-        });
+        // $(document).ready(function () {
+        //     game.chooseWord();
+        // });
 
-        $(document).keyup(function (event) {
-            var keypress = event.key.toLowerCase();
-            // console.log(keypress);
+        // $(document).keyup(function (event) {
+        //     var keypress = event.key.toLowerCase();
+        //     // console.log(keypress);
 
-            game.check_letter(keypress);
-        });
+        //     game.check_letter(keypress);
+        // });
 
 
     </script>
 
     <footer>
         <div class="container">
-            Star Wars Hangman Matthew Ayrton © Copyright 2019
+            Star Wars Hangman Matthew Ayrton U of U Bootcamp © Copyright 2019
         </div>
     </footer>
 </body>

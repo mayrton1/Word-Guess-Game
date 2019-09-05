@@ -84,7 +84,7 @@ var game = {
         this.winCondition();
     },
 
-    winCondition() {
+    winCondition: function() {
 
         // Debug
         this.debugThis(this.underscores_string, false);
@@ -113,3 +113,12 @@ var game = {
         console.log("======================");
     }
 }
+
+game.chooseWord();
+
+$(document).keyup(function (event) {
+    var keypress = event.key.toLowerCase();
+    // console.log(keypress);
+
+    game.check_letter(keypress);
+});
