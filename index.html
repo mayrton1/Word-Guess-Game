@@ -12,10 +12,13 @@
     <title>Word Guess Game</title>
     <style type="text/css">
         .jumbotron {
-            margin-top: 20px;
-            background-image: url("/assets/images/stars.jpg");
+            margin-top: 0px;
+            background-image: url("assets/images/starwars.png");
             background-size: cover;
-            color: white;
+            background-attachment: scroll;
+            min-height:500px; 
+            margin-top:400px;
+            margin-bottom: 10px;
 
         }
 
@@ -30,8 +33,19 @@
             text-align: center;
         }
 
-        .body {
+        body {
             background-image: url("assets/images/stars.jpg");
+
+        }
+        h1{
+            color:black;
+        }
+        h3 {
+            color: white;
+        }
+
+        div{
+            color: white;
         }
     </style>
 
@@ -41,18 +55,18 @@
     <div class="jumbotron">
         <div class="container">
             <h1 class="display-4">Star wars Hang Man Game!</h1>
-            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            <p class="lead"></p>
         </div>
     </div>
     <div class="container">
         <div class="row">
             <div class="col-lg-4">
-                </div>
-
             </div>
+
         </div>
     </div>
-    
+    </div>
+
 
     <div class="container">
         <header>
@@ -60,7 +74,7 @@
 
 
         </header>
-        <div id="underscores">_ _ _ _</div>
+        <div id="underscores">_ _ _ _</div> 
         <h3>Right Guesses: <span id="rightguess"></span></h3>
         <h3>Wrong Guesses: <span id="wrongguess"></span></h3>
         <div id="debug"></div>

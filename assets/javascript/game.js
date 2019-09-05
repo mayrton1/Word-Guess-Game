@@ -84,7 +84,7 @@ var game = {
         this.winCondition();
     },
 
-    winCondition: function() {
+    winCondition: function () {
 
         // Debug
         this.debugThis(this.underscores_string, false);
